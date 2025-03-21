@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Hotel - Elegância e Conforto em Limoeiro-PE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-poppins">
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="logo-container mr-3">
+                        <i class="fas fa-star text-3xl text-wine-900"></i>
+                    </div>
+                    <div class="text-2xl font-playfair font-bold text-wine-900">Star Hotel</div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-gray-700 hover:text-wine-900">Início</a>
+                    <a href="#sobre" class="text-gray-700 hover:text-wine-900">Sobre</a>
+                    <a href="#galeria" class="text-gray-700 hover:text-wine-900">Galeria</a>
+                    <a href="#servicos" class="text-gray-700 hover:text-wine-900">Serviços</a>
+                    <a href="#contato" class="text-gray-700 hover:text-wine-900">Contato</a>
+                </div>
+                <button class="md:hidden">
+                    <i class="fas fa-bars text-2xl text-wine-900"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-20">
+        <div class="relative h-screen">
+            <div class="absolute inset-0">
+                <img src="images/hotel-banner.jpg" alt="Star Hotel" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+            </div>
+            <div class="relative container mx-auto px-4 h-full flex items-center">
+                <div class="text-white max-w-2xl">
+                    <h1 class="text-5xl md:text-6xl font-playfair font-bold mb-6">Bem-vindo ao Star Hotel</h1>
+                    <p class="text-xl mb-8">Descubra a elegância e o conforto em um ambiente acolhedor no coração de Limoeiro-PE.</p>
+                    <a href="#reservar" class="bg-wine-900 text-white px-8 py-3 rounded-lg hover:bg-wine-800 transition duration-300">
+                        Reservar Agora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-playfair font-bold text-wine-900 mb-6">Sobre o Star Hotel</h2>
+                    <p class="text-gray-600 mb-6">
+                        Localizado no coração de Limoeiro-PE, o Star Hotel oferece uma experiência única de hospedagem, 
+                        combinando elegância, conforto e segurança. Nossa história é marcada pelo compromisso 
+                        com a excelência no atendimento e pela busca constante em proporcionar momentos memoráveis aos nossos hóspedes.
+                    </p>
+                    <p class="text-gray-600">
+                        Com uma equipe dedicada e instalações modernas, garantimos uma estadia agradável e segura 
+                        para todos os nossos visitantes.
+                    </p>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-xl">
+                    <img src="images/recepcao.jpg" alt="Recepção do Hotel" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria Section -->
+    <section id="galeria" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-playfair font-bold text-wine-900 text-center mb-12">Nossa Galeria</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Galeria items will be added dynamically via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-playfair font-bold text-wine-900 text-center mb-12">Serviços e Comodidades</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <i class="fas fa-coffee text-4xl text-wine-900 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Café da Manhã</h3>
+                    <p class="text-gray-600">Café da manhã completo incluído</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-wifi text-4xl text-wine-900 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Wi-Fi Gratuito</h3>
+                    <p class="text-gray-600">Internet de alta velocidade</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-parking text-4xl text-wine-900 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Estacionamento</h3>
+                    <p class="text-gray-600">Vagas gratuitas para hóspedes</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-swimming-pool text-4xl text-wine-900 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Piscina</h3>
+                    <p class="text-gray-600">Área de lazer com piscina</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-playfair font-bold text-wine-900 text-center mb-12">Contato e Localização</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-gray-700 mb-2" for="nome">Nome</label>
+                            <input type="text" id="nome" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-wine-900">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2" for="email">E-mail</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-wine-900">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2" for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-wine-900"></textarea>
+                        </div>
+                        <button type="submit" class="bg-wine-900 text-white px-6 py-2 rounded-lg hover:bg-wine-800 transition duration-300">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+                <div>
+                    <div class="h-96 rounded-lg overflow-hidden shadow-xl mb-6">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.0!2d-37.5!3d-7.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMzAnMDAuMCJTIDM3wrMwMCcwMC4wIlc!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-wine-900 mr-3"></i>
+                            <span>(81) 9999-9999</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fab fa-whatsapp text-wine-900 mr-3"></i>
+                            <span>(81) 99999-9999</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-wine-900 mr-3"></i>
+                            <span>Rua Principal, 123 - Centro, Limoeiro-PE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-wine-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Star Hotel. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
